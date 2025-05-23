@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>PDF Encryptor</title></head>
+<body>
+    <h1>Upload PDF</h1>
+    <form action="/encrypt" method="post" enctype="multipart/form-data">
+        <input type="file" name="pdfFile" required><br><br>
+        <label>Title: <input type="text" name="title"></label><br>
+        <label>Author: <input type="text" name="author"></label><br>
+        <label>Subject: <input type="text" name="subject"></label><br>
+        <label>Keywords: <input type="text" name="keywords"></label><br>
+        <label>Producer: <input type="text" name="producer"></label><br>
+        <label>Creation Date: <input type="datetime-local" name="creationDate"></label><br>
+        <label>Modification Date: <input type="datetime-local" name="modDate"></label><br>
+        <label>User Password: <input type="password" name="userPwd"></label><br>
+        <label>Owner Password: <input type="password" name="ownerPwd"></label><br>
+        <input type="submit" value="Encrypt PDF">
+    </form>
+</body>
+</html>
